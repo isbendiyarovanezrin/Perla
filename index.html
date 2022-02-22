@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Random Cat Images</title>
+
+    <!-- required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.ico" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- loader -->
+    <div id="loadingDiv">
+      <div class="loader"></div>
+    </div>
+
+    <div class="wrapper">
+      <div class="images">
+        <img src="img/cat-1.jpg" alt="cat" id="cat-img" />
+        <img src="img/cat-2.jpg" alt="cat" id="cat-img" />
+        <img src="img/cat-3.jpg" alt="cat" id="cat-img" />
+      </div>
+      <button type="button" id="btn">Get me a random cat</button>
+    </div>
+
+    <audio preload="auto" id="sound">
+      <source src="sound/kitty-meow.wav" />
+      Your browser does not support the
+      <code>audio</code> element.
+    </audio>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- script js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
